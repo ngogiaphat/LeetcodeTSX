@@ -42,9 +42,7 @@ const ProblemsTable: React.FC<ProblemsTableProp> = () => {
 							<td className = {"px-6 py-4"}>{ doc.category }</td>
 							<td className = {"px-6 py-4"}>
 								{doc.videoId ? (
-										<AiFillYoutube fontSize = {"28"} className = 'cursor-pointer hover:text-red-600' 
-											onClick = {() => setYoutubePlayer({ isOpen: true, videoId: doc.videoId as string })}
-										/>
+										<AiFillYoutube fontSize = {"28"} className = 'cursor-pointer hover:text-red-600' onClick = {() => setYoutubePlayer({ isOpen: true, videoId: doc.videoId as string })}/>
 									) : (
 									<p className = 'text-gray-400'>Coming soon</p>
 								)}
