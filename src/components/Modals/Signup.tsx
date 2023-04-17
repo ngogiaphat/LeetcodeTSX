@@ -45,8 +45,7 @@ const Signup: React.FC<SignupProps> = () => {
 				<label htmlFor='displayName' className='text-sm font-medium block mb-2 text-gray-300'>
 					Display Name
 				</label>
-				<input
-					onChange = { handleChangeInput } type = 'displayName' name = 'displayName' id = 'displayName'
+				<input onChange = { handleChangeInput } type = 'displayName' name = 'displayName' id = 'displayName'
 					className = 'border-2 outline-none sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                     bg-gray-600 border-gray-500 placeholder-gray-400 text-white' placeholder='John Doe'/>
 			</div>
