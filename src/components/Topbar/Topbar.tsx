@@ -45,7 +45,7 @@ const ProblemsTable: React.FC<ProblemsTableProps> = () => {
 								{doc.videoId ? (
 									<AiFillYoutube
 										fontSize = {"28"}
-										className = 'cursor-pointer hover:text-red-600' onClick = {() => setYoutubePlayer({ isOpen: true, videoId: doc.videoId as string })}/>
+										className = 'cursor-pointer hover:text-red-600' onClick = {() => setYoutubePlayer({isOpen: true, videoId: doc.videoId as string})}/>
 								) : (
 									<p className='text-gray-400'>Coming soon</p>
 								)}
@@ -61,7 +61,7 @@ const ProblemsTable: React.FC<ProblemsTableProps> = () => {
 						<div className = 'w-full h-full flex items-center justify-center relative'>
 							<div className = 'w-full relative'>
 								<IoClose fontSize = {"35"} className='cursor-pointer absolute -top-16 right-0' onClick = { closeModal } />
-								<YouTube videoId = { youtubePlayer.videoId } loading = 'lazy' iframeClassName = 'w-full min-h-[500px]' />
+								<YouTube videoId = {youtubePlayer.videoId} loading = 'lazy' iframeClassName = 'w-full min-h-[500px]' />
 							</div>
 						</div>
 					</div>

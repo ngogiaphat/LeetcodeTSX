@@ -8,13 +8,13 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 type AuthPageProps = {};
 const AuthPage: React.FC<AuthPageProps> = () => {
-    const authModal = useRecoilValue(authModalState);
+  const authModal = useRecoilValue(authModalState);
 	const [user, loading, error] = useAuthState(auth);
 	const [pageLoading, setPageLoading] = useState(true);
 	const router = useRouter();
 	useEffect(() => {
-		if (user) router.push("/");
-		if (!loading && !user) setPageLoading(false);
+		if(user) router.push("/");
+		if(!loading && !user) setPageLoading(false);
 	}, [user, router, loading]);
 
 	if (pageLoading) return null;
